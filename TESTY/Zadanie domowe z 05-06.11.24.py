@@ -7,3 +7,4 @@ print("*        *", "**      **", "***    ***", "****  ****", "**********", "***
 number_b = 1000000
 number_a = print(194 * 12 * 60)
 number_b / number_a
+print(str(number_b) // str(number_a))
