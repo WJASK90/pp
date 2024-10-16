@@ -10,3 +10,5 @@ wiek = input("Podaj wiek: ")
 print("Mam " + str(wiek) + " lat.")
 
 print("   *", "  ***", "*******", "   *   ",  "   *   ",  "   *   ",  "   *   ", sep="\n")
+
+print(2 * 4)
