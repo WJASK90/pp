@@ -11,4 +11,4 @@ print("Mam " + str(wiek) + " lat.")
 
 print("   *", "  ***", "*******", "   *   ",  "   *   ",  "   *   ",  "   *   ", sep="\n")
 
-print(2 * 4)
+print(4 // 2)
