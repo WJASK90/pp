@@ -5,7 +5,7 @@ print("*        *", "**      **", "***    ***", "****  ****", "**********", "***
 # OBLICZ ILE CZASU GODZIN POTRZEBA ABY POBRAĆ PLIK O ROZMIARZE 13 TB, A PLIK 194 MB UDAŁO SIĘ POBRAĆ W 5 SEKUND. WYNIK ZAOKRĄGLIJ DO PEŁNYCH GODZIN.
 
 number_b = 1000000 #1 TB to 1000000 MB
-#(194 * 12 * 60) = 139680 poniewaz 194 MB * 12 bo 5 sekund miesci sie 12 razy w 1 minucie * 60 minut czyli 1 godzine
+#(194 * 12 * 60) = 139680 poniewaz 194 MB * 12 bo 5 sekund miesci sie 12 razy w 1 minucie * 60 minut czyli 1 godzina
 number_a = 139680
 wynik = number_b // number_a
 print((wynik) * 13) #razy 13 poniewaz mamy 13 TB
