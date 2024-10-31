@@ -25,3 +25,12 @@ print("Zygmunt\t\nIrena\t\n")
 irena_1 = " Irena"
 irena_2 = "Irena "
 irena_3 = " Irena "
+print(irena_1)
+print(irena_1.lstrip())
+print(irena_2)
+print(irena_2.rstrip())
+print(irena_3)
+print(irena_3.strip())
+
+filename = 'python_notes.txt'
+print(filename.removesuffix('.txt'))
