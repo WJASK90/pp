@@ -35,3 +35,4 @@ print(message_d)
 motorcycles = ['Honda', 'KTM', 'Ducati']
 print("Chciałbym mieć samochód " + str(motorcycles[0]))
 print("Firma " + str(motorcycles[1]) + " produkuje podobne pojazdy do firmy " + str(motorcycles[2]))
+
