@@ -34,3 +34,4 @@ print(irena_3.strip())
 
 filename = 'python_notes.txt'
 print(filename.removesuffix('.txt'))
+

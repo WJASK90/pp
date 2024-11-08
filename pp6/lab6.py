@@ -19,6 +19,6 @@ print("a % b =", a % b)
 
 #Stworz drabine na ekranie
 
-print("+" + "-+" * 9, "| " * 10, "+" + "-+" 9, sep="\n")
+print("+" + "-+" * 9, "| " * 10, "+" + "-+" * 9, sep="\n")
 
 
