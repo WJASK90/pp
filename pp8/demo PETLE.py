@@ -13,5 +13,14 @@ for i in range(0, 10):
 for i in range(10):
     print(i)
 
-for i in range(3,10):
+#range()
+#poczatek 3
+#koniec < 10
+#skaczemy co 2
+for i in range(3,10, 2):
     print(i)
+
+for i in range (9, -1, -1):
+    print(i)
+
+
