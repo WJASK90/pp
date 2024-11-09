@@ -9,7 +9,7 @@ print(ord("c")), chr(99)
 print("{:08b}".format(ord("c"))) #bierzemy liczbe w formacie i zamienamy ja w bity! A 4 bit musimy zmienic na przeciwny, wg cwiczenia
 # 01100011 -> chcemy zmienic 4 bit (od prawej)
 # 00001000 -> maska pozwala nam wyizolować dany bit
-# 01101011 -> używamy XORa (alternatywa rozłączna), do zmiany bitu
+# 01101011 -> używamy XORa (alternatywa rozłączna), do zmiany bitu!
 
 print("{:08b}".format(1 << 3))
 print("{:08b}".format(ord("c") ^ (1 << 3)))
