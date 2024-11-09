@@ -25,3 +25,7 @@ print("ton: ", tons)
 # roczna produkcja pszenicy na świecie to 782 mln ton
 years = int(tons / 782_000_000)
 print("lata: ", years)
+
+# pociag moze przetransportowac 2200t
+trains = int(tons / 2200)
+print("pociągów: ", trains)
