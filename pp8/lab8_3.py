@@ -7,8 +7,8 @@
 # 1 2 4 8 16 32... ziarna zboza. Kolejne wartosci to sa potegi 2! Dochodzimy do 64
 
 
-sum = 0
+s = 0
 for i in range(64):
-    sum += 2 ** i #dodaj do sumy za kazdym raze 2 do potegi i
+    s += 2 ** i #dodaj do sumy za kazdym raze 2 do potegi i
 
-print("Suma wszystkich ziaren zboża na szachownicy to " + str(sum))
+print("Suma wszystkich ziaren zboża na szachownicy to " + str(s))
