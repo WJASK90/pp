@@ -22,7 +22,7 @@ while counter:
 random_numbers.sort()
 print(random_numbers)
 
-#najlepszy wariant!!!
+#najlepszy wariant!!!!
 
 import random
 
