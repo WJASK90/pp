@@ -15,4 +15,16 @@ fruits.append("plum") # append() to metoda, dodaje na koncu
 fruits.insert(2, "orange") # insert() to metoda,dodaje gdzie chcemy
 
 print(fruits)
+print("*" * 20)
+
+fruits = ["apple", "banana", "cherry"]
+
+for i in range(len(fruits)):
+    print(fruits[i])
+
+print()
+
+for fruit in fruits:
+    print(fruit)
+
 
