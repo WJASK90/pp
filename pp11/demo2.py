@@ -34,7 +34,7 @@ numbers = [1, 2, 3, 4, 5]
 print(5 in numbers)
 print(6 not in numbers)
 
-# wyrazenia listowe
+# wyrazenia listowe BARDZO WAZNE, BEDA CZESTO UZYWANE ! ! ! ! ! ! ! !
 
 numbers = [1, 2, 3, 4, 5]
 for i in range(1, 101):
@@ -47,3 +47,6 @@ print(numbers)
 
 numbers = [i for i in range(1, 101) if i % 2 == 0] #mamy numery parzyste w tym rangu
 print(numbers)
+
+# 1 - 300 <-- w tym rangu ile liczb jest podzielnych przez 3 i 7 jednoczesnie
+print(len([i for i in range(1, 301) if i % 3 == 0 and i % 7 == 0]))
