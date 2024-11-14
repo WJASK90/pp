@@ -27,5 +27,5 @@ print(1 * 2 ** 3 + 0 * 2 ** 2 + 1 * 2 ** 1 + 1 * 2 ** 0)
 print(0xFFF)
 print (15 * 16 ** 2 + 15 * 16 ** 1 + 15 * 16 ** 0)
 
-#moze tak? napisz 123 w systemie piątkowym
+#system piątkowy
 print(1 * 5 ** 2 + 2 * 5 ** 1 + 3 * 5 ** 0)
