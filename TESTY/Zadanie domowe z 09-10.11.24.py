@@ -9,6 +9,8 @@
 
 #musze przemycic stringi do tego wszystkiego, polaczyc to z petla ktora, kiedy zostanie zatrzymana, policzy ile wyszlo liczby parzystych a ile nieparzystych
 
+#wiec nalezy zrobic petle i warunki if (liczba parzysta to) elif (liczba nieparzysta) elif (nie liczba to stop)
+
 number = int(input("Podaj liczbę: "))
 print("Liczba to: " + str(number))
 
