@@ -9,7 +9,8 @@
 
 #musze przemycic stringi do tego wszystkiego, polaczyc to z petla ktora, kiedy zostanie zatrzymana, policzy ile wyszlo liczby parzystych a ile nieparzystych
 
-#wiec nalezy zrobic petle i warunki if (liczba parzysta to) elif (liczba nieparzysta) elif (nie liczba to stop)
+#wiec nalezy zrobic petle i warunki if (liczba parzysta to) elif (liczba nieparzysta) elif (nie liczba to stop) + zrobic integer (INT)
+# to wtedy bede mial tylko liczby calkowite
 
 number = int(input("Podaj liczbę: "))
 print("Liczba to: " + str(number))
