@@ -9,15 +9,22 @@
 
 #musze przemycic stringi do tego wszystkiego, polaczyc to z petla ktora, kiedy zostanie zatrzymana, policzy ile wyszlo liczby parzystych a ile nieparzystych
 
-#wiec nalezy zrobic petle i warunki if (liczba parzysta to) elif (liczba nieparzysta) elif (nie liczba to stop) + zrobic integer (INT)
-# to wtedy bede mial tylko liczby calkowite
+#wiec nalezy zrobic petle i warunki if (liczba parzysta to) elif (liczba nieparzysta) else (nie liczba to stop) + zrobic integer (INT)
+# to wtedy bede mial tylko liczby calkowite + czyli pracuje glownie na petli typu ELSE (patrz plik TESTY --> Testy PETLE 1)
 
-number = int(input("Podaj liczbę: "))
-print("Liczba to: " + str(number))
-
-n = int(input("Ile liczb chcesz podać? "))
 
 # Pętla do pobierania liczb
-for i in range(n):
-    liczba = int(input(f"Podaj liczbę {i+1}: "))
+# for i in range(liczba):
+#     liczba = int(input(f"Podaj liczbę: "))
+#     if (i == i(int)):
+#         continue
+#     print(f"Podana liczba {i+1} to: {liczba}")
+#         else
+#     print("To nie jest liczba całkowita!")
+
+liczba = 8
+
+for i in range(liczba):
+    user_input = input(f"Podaj liczbę całkowitą: ")
+    liczba = int(user_input)
     print(f"Podana liczba {i+1} to: {liczba}")
