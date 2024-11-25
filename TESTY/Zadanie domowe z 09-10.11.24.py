@@ -22,9 +22,31 @@
 #         else
 #     print("To nie jest liczba całkowita!")
 
-liczba = 8
+#  POMOC CHATGPT liczba = 4
+#
+# for i in range(liczba):
+#     user_input = input(f"Podaj liczbę całkowitą: ")
+#     liczba = int(user_input)
+#     print(f"Podana liczba {i+1} to: {liczba}")
 
-for i in range(liczba):
-    user_input = input(f"Podaj liczbę całkowitą: ")
-    liczba = int(user_input)
-    print(f"Podana liczba {i+1} to: {liczba}")
+# liczba = 4
+#
+# for i in range(liczba):
+#     liczba = int(input(f"Podaj liczbę: "))
+#     if (i == int(liczba)):
+#         print("To jest liczba całkowita")
+#     else:
+#         print("To nie jest liczba całkowita")
+
+
+# Pętla do wprowadzania liczb
+while True:
+    # Pobranie liczby od użytkownika
+    dane = input("Podaj liczbę całkowitą (lub naciśnij Enter, aby zakończyć): ")
+
+    # Jeśli użytkownik nie podał liczby, zakończ pętlę
+    if dane == "":
+        break
+
+
+
