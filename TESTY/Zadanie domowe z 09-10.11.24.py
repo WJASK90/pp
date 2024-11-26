@@ -38,18 +38,41 @@
 #     else:
 #         print("To nie jest liczba całkowita")
 
+#zmienna do sumowania liczb
 s = 0
 
 # Pętla do wprowadzania liczb
 while True:
     # Pobranie liczby od użytkownika
     liczba = input("Podaj liczbę całkowitą (lub naciśnij Enter, aby zakończyć): ")
-
     # Jeśli użytkownik nie podał liczby, zakończ pętlę
-    if liczba == "":
+    if int(liczba) == "":
         print("Koniec pobierania liczb")
-    else:
-        print("Liczba")
+        break
+    try:
+        # Próba konwersji wprowadzonego ciągu na liczbę całkowitą
+        liczba = int(liczba)
+        s += liczba
+        print("Suma podanych liczb to: " + str(s))
+    except ValueError:
+        # Jeśli nie udało się przekonwertować, informujemy użytkownika
+        print("To nie jest liczba całkowita, spróbuj ponownie.")
+
+
+# liczba = int(input("Podaj liczbę całkowitą (lub naciśnij Enter, aby zakończyć): "))
+# print(str(liczba))
+# print(int(liczba) + 10)
+
+
+
+# if s % 2 == 0:
+#    print("To jest liczba parzysta")
+# else:
+#     print("To jest liczba nieparzysta")
+
+
+
+
 
 
 
