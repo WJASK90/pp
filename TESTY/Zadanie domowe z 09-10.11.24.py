@@ -38,15 +38,18 @@
 #     else:
 #         print("To nie jest liczba całkowita")
 
+s = 0
 
 # Pętla do wprowadzania liczb
 while True:
     # Pobranie liczby od użytkownika
-    dane = input("Podaj liczbę całkowitą (lub naciśnij Enter, aby zakończyć): ")
+    liczba = input("Podaj liczbę całkowitą (lub naciśnij Enter, aby zakończyć): ")
 
     # Jeśli użytkownik nie podał liczby, zakończ pętlę
-    if dane == "":
-        break
+    if liczba == "":
+        print("Koniec pobierania liczb")
+    else:
+        print("Liczba")
 
 
 

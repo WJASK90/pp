@@ -9,7 +9,7 @@
 
 s = 0
 for i in range(64):
-    s += 2 ** i #dodaj do sumy za kazdym raze 2 do potegi i
+    s += 2 ** i #dodaj do sumy za kazdym razem 2 do potegi i
 
 print("Suma wszystkich ziaren zboża na szachownicy to " + str(s))
 
