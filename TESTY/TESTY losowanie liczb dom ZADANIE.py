@@ -17,6 +17,6 @@ for i in range(value_1,value_2+1):
 
 number = random.randint(value_1, value_2)
 
-print("Liczba wylosowana z zakresu to " + str(number))
+print("Liczba wylosowana z zakresu to: " + str(number))
 
 
