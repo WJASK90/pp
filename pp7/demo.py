@@ -17,3 +17,11 @@ elif number < 0:
 else:
     print("Liczba równa zero")
 
+# def silnia(n):
+#     print ('n =', n)
+#     if n > 1:
+#         return n* silnia(n - 1)
+#     else:
+#         print ('koniec')
+#         return 1
+
