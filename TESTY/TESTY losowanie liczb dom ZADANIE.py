@@ -20,23 +20,6 @@ for i in range(liczba_serii):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #DEF? PATRZ DEMO PP7!!!
 # BY CHAT GPT
 # import random
