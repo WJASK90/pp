@@ -8,17 +8,14 @@
 
 import random
 
-counter = 1
-
 value_1 = int(input("Podaj minimum zakresu liczb: "))
 value_2 = int(input("Podaj maksimum zakresu liczb: "))
+liczba_serii = int(input("Podaj liczbę serii: "))
+liczba_liczb_w_serii = int(input("Podaj liczbę liczb serii: "))
+for i in range(liczba_serii):
+    seria = [random.randint(value_1, value_2) for _ in range(liczba_liczb_w_serii)]
+    print("Seria " + str(i+1) + ": " + str(seria))
 
-liczba_serii = int(input("Podaj liczbę liczb serii: "))
-liczba_liczb_w_serii = int(input("Podaj liczbę serii: "))
-for i in range(value_1,value_2+1):
-    print(i)
-
-number = random.randint(value_1, value_2)
 
 
 
