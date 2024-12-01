@@ -1,7 +1,7 @@
 # Napisz program pobierający od użytkownika liczbę całkowitą i zwracający
 # liczbę jedynek w ciągu bitów reprezentujących tę liczbę.
 
-daj_liczbe = int(input("Podaj liczbę: "))
+daj_liczbe = int(input("Podaj proszę liczbę: "))
 binarnie = "{:08b}".format(daj_liczbe)
 
 ile_1 = 0
