@@ -29,4 +29,4 @@ simple_url = nostarch_url.removeprefix('https://')
 print(simple_url)
 
 message = "Dla programisty Johna O'Hary jedną z zalet Pythona jest jego wszechstronność i oddana mu społeczność"
-print(message) 
+print(message)  #:)
