@@ -15,7 +15,7 @@ rolls = []
 for i in range(DICE_ROLLS_TOTAL):
     rolls.append(random.randint(1, 6))
 
-print("Zbiór wyników po", DICE_ROLLS_TOTAL, "rutach kostką do gry:", rolls )
+print("Zbiór wyników po", DICE_ROLLS_TOTAL, "rzutach kostką do gry:", rolls )
 
 print("Za 8. razem wyrzucono wartość", str(rolls[8 - 1])) #odejmujesz 1 bo indeks zaczyna sie od 0
 
