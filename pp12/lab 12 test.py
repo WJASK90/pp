@@ -5,12 +5,18 @@
 
 sign_choice = input("Wpisz znak: ")
 multiple = int(input("Ile razy wyświetlić znak? " ))
-# vert =
-# hor =
+sign_x_multiple = sign_choice * multiple
+direction = input("Czy ma być w PIONIE czy w POZIOMIE? Napisz PI lub PO: ")
+
 
 def show_sign(how_many): #dodajemy how_many czyli ile razy wyswietlic
-    print(sign_choice * multiple)
+    # for i in range(how_many):
+        if direction == "PI":
+            print(sign_x_multiple, end= "\n")
+        if direction == "PO":
+            print(sign_x_multiple, end="")
 
-show_sign(5)
-show_sign(8)
+
 show_sign(1)
+
+#zmien to na listy, wtedy elementy sa wyswietlane po przecinku i mozesz je wyswietlac w pionie lub nie!!!!!!!! dzieki, Krzychu
