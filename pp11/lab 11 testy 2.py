@@ -2,6 +2,14 @@
 # następnie wyświetl je w kolejności malejącej pozbywając się wcześniej
 # duplikatów.
 
+import random
+
 lista_elementów = []
 
-print(int(input("Podaj serię liczb całkowitych: "))
+ZAKRES_1 = int(input("Podaj minimum zakresu: "))
+ZAKRES_2 = int(input("Podaj maksimum zakresu: "))
+SERIA = int(input("Podaj serię liczb całkowitych: "))
+for i in range(SERIA):
+    lista_elementów = [random.randint(ZAKRES_1, ZAKRES_2) for j in range(SERIA)]
+    print("Stworzona seria: ", lista_elementów)
+
