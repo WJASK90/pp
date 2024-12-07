@@ -1,7 +1,3 @@
-# 2. Napisz skrypt pobierający od użytkownika serię liczb całkowitych, a
-# następnie wyświetl je w kolejności malejącej pozbywając się wcześniej
-# duplikatów.
-
 numbers = []
 numbers_total = int(input("Podaj liczbę elementów zbioru: "))
 for i in range(numbers_total): #pytamy tyle razy, ile sie zadeklarowal uzytkownik
