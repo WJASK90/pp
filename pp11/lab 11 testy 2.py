@@ -13,3 +13,9 @@ for i in range(SERIA):
     lista_elementów = [random.randint(ZAKRES_1, ZAKRES_2) for j in range(SERIA)]
     print("Stworzona seria: ", lista_elementów)
 
+lista_elementów.sort(reverse=True)
+print("Lista w kojeności malejącej: ", lista_elementów)
+
+
+# sortowanie w kolejnosci malejacej SERIA.sort(reverse=True)
+
