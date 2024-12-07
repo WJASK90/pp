@@ -17,7 +17,7 @@ def fib(n): #argument jako n-ty ("entny") element ciągu
 
     return sum
 
-for n in range(1, 10):
+for n in range(1, 10): #impelementacja ciagu Fibonacciego za pomoca petli
     print(n, "->}" , fib(n))
 
 print(fib(6))
