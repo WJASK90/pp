@@ -21,3 +21,5 @@ for n in range(1, 10): #impelementacja ciagu Fibonacciego za pomoca petli
     print(n, "->}" , fib(n))
 
 print(fib(6))
+
+#najprosciej to zrobic uzywaja REKURENCJI
