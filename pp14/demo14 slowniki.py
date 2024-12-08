@@ -1,4 +1,4 @@
-#klasyczny slownik to ksiazka telefoniczna, dobry przyklad
+#klasyczny slownik to ksiazka telefoniczna, dobry przyklad --> slowniki sa ZMIENNE
 
 phones = {"Tomek": 555555, "Ada" : 123123123, "Karol": 444333222} # klucz:wartość
 print(phones)
@@ -20,3 +20,41 @@ print(animals_dict.get("kot")) #rowniez dostajemy KLUCZ.
 #wartosc ktora nam pokaze jak nie bedzie elementu, patrz na dole
 print(animals_dict.get("słoń", "brak takiego klucza w słowniku"))
 print(animals_dict.get("kot", "brak takiego klucza w słowniku"))
+
+words = ["kot", "lew", "chomik"]
+
+# for word in words:
+#     print(word, "->", animals_dict[word]) #wystąpi błąd bo nie mam LEW w słowniku
+
+for word in words:
+    if word in animals_dict.keys(): # metoda keys() zwraca wszystkie klucze słownika
+        print(word, "->", animals_dict[word])
+    else:
+        print("Nie znaleziono słowa {} w słowniku".format(word)) #omijamy to używając warunkow if, else itd
+
+for key in animals_dict.keys():
+    print(key, "->", animals_dict[key]) #przechodzimy po slowach w slowniku
+
+for value in animals_dict.values():
+    print(value) #dostajemy tylko wartości
+
+print()
+
+for PL, EN in animals_dict.items():
+    print(PL, "->" ,EN)
+
+#modyfikacje, zmienianie
+
+animals_dict1 = {
+    "kot": "cat",
+    "pies": "dog",
+    "chomik": "hamster",
+}
+
+animals_dict1["świnka"] = "pig" #dodajem klucz:wartość
+print(animals_dict1)
+print(animals_dict1.popitem())
+print(animals_dict1)
+
+animals_dict.clear() #czyścimi słownik
+print(animals_dict)
