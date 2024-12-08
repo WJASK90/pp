@@ -6,3 +6,13 @@
 # • przemyśl jak dużo zmian trzeba wprowadzić w skrypcie, aby losować z większego zbioru liter, a także
 # większą liczbę liter.
 
+import random
+
+def draw_letter(): #wylosuj litere
+    pass
+
+def draw_row(): #wylosuj wiersz
+    pass
+
+def check(row): #sprawdzamy wiersz
+    pass
