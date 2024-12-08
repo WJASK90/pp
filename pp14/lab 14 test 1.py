@@ -7,7 +7,7 @@
 
 phones_1 = {"Tomasz": 39555, "Agata": 39666, "Karol": 39777, "Cezary": 39888} # klucz:wartość
 
-select_name = input("Potrzebujesz numeru telefono do kogo? Podaj imię z Tomasz/Agata/Karol/Cezary: ")
+select_name = input("Potrzebujesz numeru telefono do kogo? Wybierz imię Tomasz/Agata/Karol/Cezary: ")
 for i in phones_1:
     if i in phones_1.keys():
         print(phones_1.get(select_name, "Brak takiej osoby w książce telefonicznej"))
