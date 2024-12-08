@@ -7,7 +7,7 @@
 # 1 x 1 = 1
 
 def show_operation(a, b):
-    print(a, "x", b, "=", a*b) #graficznie a x b = a*b
+    print(a, "x", b, "=", a * b) #graficznie a x b = a*b
     if a == 10 and b == 10:
         return
     elif a == 10:
