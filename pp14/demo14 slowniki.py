@@ -16,4 +16,7 @@ animals_dict = {
 
 print(animals_dict["kot"]) #tutaj tez mozemy sie odwolac to danego elementu, ale wpisujemy KLUCZ a nie NUMER INDEKSU
 print(animals_dict.get("kot")) #rowniez dostajemy KLUCZ.
-#roznica miedzy [] a .get jest taka ze jesli w pierwszym print wpiszemy nieistniejacy klucz, to bedzie ERROR, a .get nie da bledu tylko None
+#roznica miedzy [] a .get jest taka ze jesli w pierwszym print wpiszemy nieistniejacy klucz, to bedzie ERROR, a .get nie da bledu tylko None. Mozemy wpisac obok inna
+#wartosc ktora nam pokaze jak nie bedzie elementu, patrz na dole
+print(animals_dict.get("słoń", "brak takiego klucza w słowniku"))
+print(animals_dict.get("kot", "brak takiego klucza w słowniku"))
