@@ -10,7 +10,7 @@ def transform_data(list1, list2, list3):
     result = []
     merge_list_without_duplicate(list1, result)
     merge_list_without_duplicate(list2, result)
-    merge_list_without_duplicate(list2, result)
+    merge_list_without_duplicate(list3, result)
     return tuple(result) #podczas zwracania konwertujemy w zwrotke/tuple
 
 print(transform_data(list1=[1, 2], list2=[1, 1], list3=[4, 4, 4]))
