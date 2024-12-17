@@ -24,8 +24,6 @@ for number in user_numbers:
     if number in random_numbers:
         hit_total += 1
 
-for i in range(6):
-    random_numbers.append(random.randint(1,49))
 
 random_numbers.sort()
 user_numbers.sort()
