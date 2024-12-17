@@ -55,4 +55,4 @@ win_points = define_win_points()
 winner = count_points(players, win_points)
 show_results(players, winner)
 
-print(players)
+
