@@ -15,7 +15,8 @@ def show_operation(a, b):
     else:
         show_operation(a + 1, b)
 
-#wchodzimy z dwoma liczbami, sprawdza warunek czy czasem a i b nie maja wartosci 10, jak obydwa osiagna 10 to zatrzymujemy operacje
+#wchodzimy z dwoma liczbami, sprawdza warunek czy czasem a i b nie maja wartosci 10,
+#jak obydwa osiagna 10 to zatrzymujemy operacje
 
 show_operation(1, 1)
 
