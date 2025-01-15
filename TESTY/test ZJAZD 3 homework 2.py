@@ -23,7 +23,7 @@ def max_levels(cans, current_level=0):
         return current_level
 
 # Funkcja budująca wieżę z symbolu
-def build_tower(levels, symbol='#'):
+def build_tower(levels, symbol="@"):
     tower = []
     for level in range(1, levels + 1):
         tower.append(symbol * level)

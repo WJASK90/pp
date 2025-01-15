@@ -27,3 +27,29 @@ print(silnia(5))
 #WAZNE
 # W każdej funkcji rekurencyjnej musisz ustalić warunek, który zatrzyma dalsze wywołania.
 # Gdy dojdzie do tego punktu, rekurencja kończy się.
+
+# def inverse_counting(n):
+#     if n == 0:
+#         return
+#     else:
+#         return n - 1
+#
+# print(inverse_counting(5))
+
+#powyzej, Funkcja zwraca tylko n−1n−1,
+# ale nie wywołuje samej siebie ponownie, więc rekurencja się nie odbywa.
+
+# Kiedy wywołasz inverse_counting(5), funkcja zwróci wartość 5−1=45−1=4,
+# ale nie kontynuuje się dalej. W efekcie nie zobaczysz żadnych wypisanych liczb.
+
+# W tej wersji brakuje najważniejszego elementu, czyli wywołania samej siebie (rekurencji)
+# z nowym argumentem, czyli inverse_counting(n - 1).
+
+def inverse_counting(n):
+    if n == 0:
+        return
+    else:
+        print(n)
+        inverse_counting(n - 1) #Rekurencja!
+
+print(inverse_counting(5))
