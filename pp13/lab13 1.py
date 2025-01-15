@@ -34,3 +34,6 @@ numbers = [1, 2, 3]
 print(pow3(numbers, 2))
 
 print(pow3(numbers, 5))
+
+numbers_2 = [10, 20]
+print(pow3(numbers_2, 2))
