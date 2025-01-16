@@ -8,15 +8,15 @@
 import random
 
 
-# Funkcja do czyszczenia ekranu przez wyświetlenie pustych linii
+# Funkcja do czyszczenia ekranu
 def clear_screen():
-    # Wyświetlamy 100 pustych linii, aby "wyczyścić" ekran
+    # Wyświetlamy 100 pustych linii
     print("\n" * 100)
 
 
 # Funkcja do gry
 def memory_game():
-    # Lista słów do wyboru
+    # Lista słów
     words = ['czereśnia', 'banan', 'truskawka', 'pies', 'kot', 'pomarańcza', 'motyl', 'koń', 'słoń', 'lew']
 
     # Losowanie pierwszego słowa
@@ -27,23 +27,23 @@ def memory_game():
     print("Pierwsze słowo:", game_words[0])
 
     while True:
-        clear_screen()  # Czyszczenie ekranu - wyświetlanie pustych linii
+        clear_screen()  # Czyszczenie ekranu czyli wyświetlanie pustych linii
         print("Runda " + str(len(game_words)) + " - Gracz " + str(current_player))
 
-        # Gracz musi powtórzyć słowa i dodać swoje
+        # Gracz musi powtórzyć słowa, po czym dodaje swoje
         player_input = input("Gracz " + str(current_player) + ", napisz słowa: ").strip().lower()
 
-        # Sprawdzanie, czy gracz podał poprawnie wszystkie słowa
+        # Sprawdzanie słowa są poprawne i w dobrej kolejności
         if player_input == ' '.join(game_words):
             print("Dobrze pamiętasz! Teraz napisz swoje słowo.")
             new_word = input("Gracz " + str(current_player) + ", napisz nowe słowo: ").strip().lower()
-            game_words.append(new_word)  # Dodajemy nowe słowo do listy
-            current_player = 2 if current_player == 1 else 1  # Zmieniamy gracza
+            game_words.append(new_word)  # nowe słowo do listy
+            current_player = 2 if current_player == 1 else 1  # Zmiana gracza
         else:
-            # Gracz popełnił błąd, kończymy grę
+            # Błąd czyli koniec gry
             print("Popełniłeś błąd, koniec gry.")
             break
 
 
-# Rozpoczęcie gry
+# Start gry
 memory_game()
