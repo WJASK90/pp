@@ -23,7 +23,7 @@ def memory_game():
     game_words = [random.choice(words)]
     current_player = 1
 
-    print("Gra w pamięć. Powtarzaj słowa w tej samej kolejności!")
+    print("Gra w pamięć. Musisz pisać słowa w tej samej kolejności!")
     print("Pierwsze słowo:", game_words[0])
 
     while True:
@@ -31,17 +31,17 @@ def memory_game():
         print("Runda " + str(len(game_words)) + " - Gracz " + str(current_player))
 
         # Gracz musi powtórzyć słowa i dodać swoje
-        player_input = input("Gracz " + str(current_player) + ", podaj słowa: ").strip().lower()
+        player_input = input("Gracz " + str(current_player) + ", napisz słowa: ").strip().lower()
 
         # Sprawdzanie, czy gracz podał poprawnie wszystkie słowa
         if player_input == ' '.join(game_words):
-            print("Dobrze! Teraz dodaj swoje słowo.")
-            new_word = input("Gracz " + str(current_player) + ", podaj nowe słowo: ").strip().lower()
+            print("Dobrze pamiętasz! Teraz napisz swoje słowo.")
+            new_word = input("Gracz " + str(current_player) + ", napisz nowe słowo: ").strip().lower()
             game_words.append(new_word)  # Dodajemy nowe słowo do listy
             current_player = 2 if current_player == 1 else 1  # Zmieniamy gracza
         else:
             # Gracz popełnił błąd, kończymy grę
-            print("Błąd! Gra kończy się.")
+            print("Popełniłeś błąd, koniec gry.")
             break
 
 
