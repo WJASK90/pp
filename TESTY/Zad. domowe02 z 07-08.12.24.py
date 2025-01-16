@@ -7,15 +7,14 @@
 # wieżę potrzebujemy 6 puszek a np. mając 10 puszek, ułożymy 4
 # poziomową wieżę.
 
-
-# Funkcja obliczająca ile puszek potrzeba aby zbudowania wieżę o n poziomów
+# Funkcja obliczająca liczbę puszek potrzebnych do zbudowania wieży o n poziomach
 def needed_cans(n):
     if n == 0:
         return 0
     else:
         return n + needed_cans(n - 1)
 
-# Funkcja obliczająca liczbę poziomów, które można zbudować z puszek
+# Funkcja obliczająca maksymalną liczbę poziomów, które można zbudować z dostępnych puszek
 def max_levels(cans, current_level=0):
     if needed_cans(current_level + 1) <= cans:
         return max_levels(cans, current_level + 1)
@@ -23,23 +22,23 @@ def max_levels(cans, current_level=0):
         return current_level
 
 # Funkcja budująca wieżę z symbolu
-def build_tower(levels, symbol="@"):
+def build_tower(levels, symbol='#'):
     tower = []
     for level in range(1, levels + 1):
         tower.append(symbol * level)
     return tower
 
-# Zastosowanie
+# Przykład użycia
 levels = 3
 cans_needed = needed_cans(levels)
-print(f"Do zbudowania {levels}-poziomowej wieży potrzebujemy {cans_needed} puszek.")
+print("Do zbudowania " + str(levels) + "-poziomowej wieży potrzebujemy " + str(cans_needed) + " puszek.")
 
-# Obliczanie, ile poziomów można zbudować z puszek
+# Obliczanie, ile poziomów można zbudować z dostępnych puszek
 available_cans = 10
 max_possible_levels = max_levels(available_cans)
-print(f"Z {available_cans} puszek można zbudować wieżę o {max_possible_levels} poziomach.")
+print("Z " + str(available_cans) + " puszek można zbudować wieżę o " + str(max_possible_levels) + " poziomach.")
 
-# Budowa wieży
+# Budowanie wieży
 tower_levels = build_tower(max_possible_levels)
 print("Wieża zbudowana z dostępnych puszek:")
 for level in tower_levels:

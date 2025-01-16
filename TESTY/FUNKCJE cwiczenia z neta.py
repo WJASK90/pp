@@ -60,6 +60,20 @@
 # Python nie przypisuje domyślnych typów do nazw argumentów, ale działa na podstawie
 # danych, które do nich przekazujesz.
 
+# ZADANIE
+# Stwórz funkcję, która przyjmuje listę liczb i zwraca sumę liczb, które są liczbami nieparzystymi.
+# Szczegóły:
+#
+#     Funkcja ma przyjmować listę liczb (mogą być zarówno całkowite, jak i zmiennoprzecinkowe).
+#     Funkcja powinna obliczyć sumę tylko tych liczb, które są liczbami nieparzystymi (jeśli liczba jest liczbą całkowitą).
+#     Funkcja powinna zwrócić wynik tej sumy.
+#
+# Przykłady:
+#
+#     Dla listy [1, 2, 3, 4, 5] wynik powinien być 9 (1 + 3 + 5).
+#     Dla listy [10, 15, 20, 25] wynik powinien być 40 (15 + 25).
+#     Dla listy [2.5, 3.5, 4.5, 5.5] funkcja powinna zwrócić 0 (nie ma liczb całkowitych nieparzystych).
+
 #i % 2 != 0 cyfra nieparzysta
 def suma_nieparzystych(lista):
     LISTA_NIEPARZYSTYCH = []
