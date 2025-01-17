@@ -10,3 +10,25 @@ def multiple_table(a, b):
         multiple_table(a + 1, b)
 
 multiple_table(1, 1)
+
+
+
+#wersja alternatywna
+
+# def multiple_table(a, b):
+#     if a > 10:  # zakończenie po osiągnięciu 10 dla a
+#         return
+#     if b > 10:  # zakończenie po osiągnięciu 10 dla b
+#         multiple_table(a + 1, 1)  # resetujemy b i przechodzimy do kolejnego a
+#     else:
+#         print(a, "X", b, "=", a * b)  # wypisanie wyniku
+#         multiple_table(a, b + 1)  # rekurencyjnie przechodzimy do następnego b
+#
+# multiple_table(1, 1)
+
+#WYTLUMACZENIE
+#Dlaczego ta wersja jest lepsza?
+    #
+    # Lepsza czytelność: warunki zatrzymania rekurencji są teraz łatwiejsze do zrozumienia.
+    # Uproszczona logika: po prostu resetujemy b przy przekroczeniu wartości 10 i przechodzimy do kolejnej wartości a.
+    # Efektywność: proces wyjścia z rekurencji jest bardziej jednoznaczny.
