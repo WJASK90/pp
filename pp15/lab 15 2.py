@@ -6,7 +6,7 @@ numbers = []
 counter = 1
 
 while True:
-    if counter > 3:
+    if counter > 3: #dopoki jest spelniany warunek
         break
     try: #tutaj badamy sytuacje wyjatkowo, pobieramy liczbe, zapisujemy zmiennia i pobieramy input typo float
         number = float(input("Podaj {} liczbę zmiennoprzecinkową: ".format(counter)))

@@ -5,7 +5,7 @@
 numbers = []
 counter = 1
 
-while True:
+while True: #dopoki jest spelniany warunek
     if counter > 3:
         break
     try: #tutaj badamy sytuacje wyjatkowo, pobieramy liczbe, zapisujemy zmiennia i pobieramy input typo float
