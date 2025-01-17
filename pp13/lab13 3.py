@@ -4,7 +4,7 @@
 # • kontynuuj losowania do momentu wystąpienia 3 takich samych liter np. A A A,
 # • wyświetl informację o wynikach poszczególnych losowań oraz numer próby,
 # • przemyśl jak dużo zmian trzeba wprowadzić w skrypcie, aby losować z większego zbioru liter, a także
-# większą liczbę liter.
+# większą liczbę liter. !
 
 import random
 
