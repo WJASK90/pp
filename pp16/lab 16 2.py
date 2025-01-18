@@ -5,3 +5,6 @@
 # • dodaj funkcję zwracającą iloczyn wszystkich liczb z listy,
 # • dodaj testy weryfikujące poprawne działanie napisanych funkcji,
 # • zaimportuj utworzony moduł i skorzystaj z jego funkcji.
+
+#tworzymy modul numli
+
