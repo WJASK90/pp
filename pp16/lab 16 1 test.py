@@ -25,5 +25,3 @@ angle = math.radians(90)
 sinus = math.sin(angle)
 
 print(sinus)
-
-
