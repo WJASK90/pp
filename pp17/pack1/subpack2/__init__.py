@@ -1,0 +1,1 @@
+print("Inicjalizuje subpack2")
