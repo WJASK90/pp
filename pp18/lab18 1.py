@@ -10,4 +10,4 @@ polski_alfabet = [
 
 # Wyświetlenie liter alfabetu oraz ich punktów kodowych
 for litera in polski_alfabet:
-    print(f'{litera}: {ord(litera)}')
+    print(litera + ": " + str(ord(litera)))
