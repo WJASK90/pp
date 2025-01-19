@@ -8,7 +8,7 @@ class Employee:
     def get_salary(self):
         return self.__salary
 
-    def get_fullname(self): #metoda zwraca imiei i nazwisko
+    def get_fullname(self): #metoda zwraca imie i nazwisko
         return '{} {}'.format(self.__firstname, self.__lastname)
 
     def get_age(self):

@@ -9,7 +9,7 @@ print("Lista płac")
 print("-" * 30)
 for employee in employees:
     print(employee.get_fullname(),
-          "wiek:", employee.get_age,
+          "wiek:", employee.get_age(),
           "lat, pensja:", employee.get_salary(),
           "zł")
 
