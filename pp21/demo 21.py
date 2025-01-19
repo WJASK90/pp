@@ -1,4 +1,4 @@
-class MyClass(): #nie ma wlasciwosci ani zachowan
+class MyClass: #nie ma wlasciwosci ani zachowan, przy ZDEFINIOWANIU nie potrzeba nawiasu w porownaniu do FUNKCJI
     pass
 
 my_obj = MyClass() #nazywamy obiekt, troche dopodbne do wylowywania funkcji, podejscie do programowania zorientowanego obiektowo

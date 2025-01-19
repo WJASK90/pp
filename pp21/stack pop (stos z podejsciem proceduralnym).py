@@ -1,4 +1,5 @@
 stack = [] #czyli "stos"
+stack2 = []
 
 def push(val):
     stack.append(val) #bierzemy liste i dodajemy element
