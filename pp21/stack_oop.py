@@ -11,33 +11,10 @@ class Stack: # definiowanie klasy stosu --> bedzie mogla miec rozne zachowania, 
         del self.__stack_list[-1]
         return item
 
-    def empty(self):
-        return len(self.__stack_list) == 0 #lab 21 3, jezeli ilosc elementow na stosie to 0 to znaczy ze stos jest pusty/empty, inaczej zwraca FALSE
 
-    def size(self):
-        return len(self.__stack_list) #lab 21 3
-
-    def top(self):
-        return self.__stack_list[-1] #lab 21 3 zwracamy stack list -1
-
-stack = Stack()
-print("Jest pusty?", stack.empty())
-
-stack.push("Ala")
-stack.push("Tomek")
-stack.push("Agata")
-
-print("Jest pusty?", stack.empty())
-print("Ile elementów?", stack.size())
-print("Na samej górze:", stack.top())
-
-print(stack.pop())
-print(stack.pop())
-print(stack.pop())
-
-# class StackSum(Stack): #tutaj nawiasy, bo trzeba zaznaczyc ze klasa STACKSUM bedzie rozszerzala klase STACK i bedzie DZIEDZICZYLA, moze dziedziczyc wszystko --> OPIS: DEFINIUJEMY NOWA KLASE DZIEDZICZACA PO KLASIE STACK
-#     def getSum(self):
-#         return sum(self._Stack__stack_list)
+class StackSum(Stack): #tutaj nawiasy, bo trzeba zaznaczyc ze klasa STACKSUM bedzie rozszerzala klase STACK i bedzie DZIEDZICZYLA, moze dziedziczyc wszystko --> OPIS: DEFINIUJEMY NOWA KLASE DZIEDZICZACA PO KLASIE STACK
+    def getSum(self):
+        return sum(self._Stack__stack_list)
 
 # stack = StackSum()
 # stack.push(10)
@@ -91,14 +68,14 @@ print(stack.pop())
 
 #TEST DZIALANIA OBIEKTOWEGO
 
-# if __name__ == '__main__':
-#
-# stack = StackSum()
-#
-# for i in range(1001):
-#     stack.push(i)
-#
-# print(stack.getSum()) #suma liczb
-#
-# for _ in range(1, 1001): #sciaga i pokazuje w jednej linii
-#     print(stack.pop(), end="")
+if __name__ == '__main__':
+
+    stack = StackSum()
+
+for i in range(1001):
+    stack.push(i)
+
+print(stack.getSum()) #suma liczb
+
+for _ in range(1, 1001): #sciaga i pokazuje w jednej linii
+    print(stack.pop(), end="")
