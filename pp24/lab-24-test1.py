@@ -4,3 +4,5 @@
 # • utwórz kilka figur i wyświetl ich typy.
 
 
+class Shape:
+    pass

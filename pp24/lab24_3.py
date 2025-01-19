@@ -6,3 +6,5 @@
 # Zademonstruj działanie programu przechowując listę różnych typów osób/pracowników.
 
 
+
+
