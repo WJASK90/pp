@@ -11,40 +11,47 @@ class Stack: # definiowanie klasy stosu --> bedzie mogla miec rozne zachowania, 
         del self.__stack_list[-1]
         return item
 
-stack_obj = Stack()
+class StackSum(Stack): #tutaj nawiasy, bo trzeba zaznaczyc ze klasa STACKSUM bedzie rozszerzala klase STACK i bedzie DZIEDZICZYLA, moze dziedziczyc wszystko
+    pass
 
-stack_obj.push(3)
-stack_obj.push(2)
-stack_obj.push(1)
+stack = StackSum()
+stack.push(10)
+print(stack.pop()) #wynik 10
 
-# stack_obj.--stack_list.append(222) #stack object, odwolam sie do stack list i zrobie append 222, wynikiem bedzie blad bo jest zabezpieczenie __ !
-# musimy uzywac metody push i pop. PO TO JEST ENKAPSULACJA, uzytkownik musi uzywac tylko nasz interfejs
-
-print(stack_obj.pop())
-print(stack_obj.pop())
-print(stack_obj.pop())
-
-stack1 = Stack()
-stack2 = Stack()
-
-stack1.push(3)
-stack2.push("Ala")
-stack1.push(2)
-stack2.push("ma")
-stack1.push(1)
-stack2.push("kota")
-
-print()
-
-print(stack1.pop())
-print(stack1.pop())
-print(stack1.pop())
-
-print()
-
-print(stack2.pop())
-print(stack2.pop())
-print(stack2.pop())
+# stack_obj = Stack()
+#
+# stack_obj.push(3)
+# stack_obj.push(2)
+# stack_obj.push(1)
+#
+# # stack_obj.--stack_list.append(222) #stack object, odwolam sie do stack list i zrobie append 222, wynikiem bedzie blad bo jest zabezpieczenie __ !
+# # musimy uzywac metody push i pop. PO TO JEST ENKAPSULACJA, uzytkownik musi uzywac tylko nasz interfejs
+#
+# print(stack_obj.pop())
+# print(stack_obj.pop())
+# print(stack_obj.pop())
+#
+# stack1 = Stack()
+# stack2 = Stack()
+#
+# stack1.push(3)
+# stack2.push("Ala")
+# stack1.push(2)
+# stack2.push("ma")
+# stack1.push(1)
+# stack2.push("kota")
+#
+# print()
+#
+# print(stack1.pop())
+# print(stack1.pop())
+# print(stack1.pop())
+#
+# print()
+#
+# print(stack2.pop())
+# print(stack2.pop())
+# print(stack2.pop())
 
 # stack_obj = Stack() #tu musza byc nawiasy okragle #tworzac obiekt, jest wywolywany KONSTRUKTOR ktory inicjalizuje
 # stack_obj.stack_list.append(1)
