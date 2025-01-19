@@ -3,3 +3,5 @@
 # • stwórz kilka przykładowych egzemplarzy tej klasy,
 # • zademonstruj działanie wybranych metod na przykładowych egzemplarzach.
 
+class Book:
+    pass
