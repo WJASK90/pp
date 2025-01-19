@@ -11,12 +11,16 @@ class Stack: # definiowanie klasy stosu --> bedzie mogla miec rozne zachowania, 
         del self.__stack_list[-1]
         return item
 
-class StackSum(Stack): #tutaj nawiasy, bo trzeba zaznaczyc ze klasa STACKSUM bedzie rozszerzala klase STACK i bedzie DZIEDZICZYLA, moze dziedziczyc wszystko
-    pass
+class StackSum(Stack): #tutaj nawiasy, bo trzeba zaznaczyc ze klasa STACKSUM bedzie rozszerzala klase STACK i bedzie DZIEDZICZYLA, moze dziedziczyc wszystko --> OPIS: DEFINIUJEMY NOWA KLASE DZIEDZICZACA PO KLASIE STACK
+    def getSum(self):
+        return sum(self._Stack__stack_list)
 
-stack = StackSum()
-stack.push(10)
-print(stack.pop()) #wynik 10
+# stack = StackSum()
+# stack.push(10)
+# stack.push(20)
+# stack.push(30)
+# print(stack.getSum())
+# print(stack.pop()) #wynik 10
 
 # stack_obj = Stack()
 #
@@ -60,3 +64,15 @@ print(stack.pop()) #wynik 10
 # print(len(stack_obj.stack_list)) #wez obiekt stack_obj i sprawdz ile tam jest elementow, czyli funkcja LEN, powinno dac 0
 
 # piszac self.stack_list to nam stackuje, jak damy self.__stack_list to nie bedzie dzialac, ale mozna to obejsc metoda
+
+#TEST DZIALANIA OBIEKTOWEGO
+
+stack = StackSum()
+
+for i in range(1001):
+    stack.push(i)
+
+print(stack.getSum()) #suma liczb
+
+for _ in range(1, 1001): #sciaga i pokazuje w jednej linii
+    print(stack.pop(), end="")
