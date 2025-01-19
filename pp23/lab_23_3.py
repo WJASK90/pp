@@ -45,7 +45,8 @@ products.append(Product(name="jogurt", category="spożywcze", price=2.15))
 products.append(Product(name="płyn do naczyń", category="chemia", price=4.50))
 
 show_products(products)
-special_offer(products, category="chemia", discount_in_percent=0.2)
+special_offer(products, category="chemia", discount_in_percent=10)
+show_products(products)
 
 
 
