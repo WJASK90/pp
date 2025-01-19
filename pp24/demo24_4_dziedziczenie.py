@@ -5,9 +5,15 @@ class Animal:
     def __str__(self):
         return f"Jestem zwierzęciem, mam na imię {self.__name}"
 
+    def get_name(self):
+        return self.__name
+
 class Dog(Animal): #klasa DOG rozszerza ANIMAL
     def __init__(self, name): #KONSTRUKTOR
-        Animal.__init__(self, name) #KONSTRUKTOR wywoluje z ANIMAL
+        super().__init__(name) #KONSTRUKTOR wywoluje z klasy ANIMAL / super() wywoluje z NADKLASY Animal ale bez self w ()
+
+    def __str(self):
+    return f"Jestem psem, mam na imię {self.get_name()}"
 
 dog = Dog("Pluto") #mam obiekt klasy DOG
 print(dog)
