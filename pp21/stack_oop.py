@@ -12,6 +12,7 @@ class Stack: # definiowanie klasy stosu --> bedzie mogla miec rozne zachowania, 
         return item
 
 stack_obj = Stack()
+
 stack_obj.push(3)
 stack_obj.push(2)
 stack_obj.push(1)
@@ -23,6 +24,27 @@ print(stack_obj.pop())
 print(stack_obj.pop())
 print(stack_obj.pop())
 
+stack1 = Stack()
+stack2 = Stack()
+
+stack1.push(3)
+stack2.push("Ala")
+stack1.push(2)
+stack2.push("ma")
+stack1.push(1)
+stack2.push("kota")
+
+print()
+
+print(stack1.pop())
+print(stack1.pop())
+print(stack1.pop())
+
+print()
+
+print(stack2.pop())
+print(stack2.pop())
+print(stack2.pop())
 
 # stack_obj = Stack() #tu musza byc nawiasy okragle #tworzac obiekt, jest wywolywany KONSTRUKTOR ktory inicjalizuje
 # stack_obj.stack_list.append(1)
