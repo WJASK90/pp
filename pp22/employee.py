@@ -14,5 +14,5 @@ class Employee:
     def get_age(self):
         return self.__age
 
-    def rise_salary(self): #lab 22 1
+    def raise_salary(self): #lab 22 1
         return self.__salary * 0.1 + self.__salary

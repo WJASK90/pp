@@ -16,7 +16,7 @@ def product_list(list): #iloczyn
     product = 1
     for number in list:
         product *= number
-        return product
+    return product
 
 if __name__ == '__main__':
     list1 = [1, 2, 3]

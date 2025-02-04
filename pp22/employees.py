@@ -11,6 +11,6 @@ for employee in employees:
     print(employee.get_fullname(),
           "wiek:", employee.get_age(),
           "lat, pensja:", employee.get_salary(),
-          "zł", "podwyżka 10%:", employee.rise_salary())
+          "zł", "podwyżka 10%:", employee.raise_salary())
 
 
