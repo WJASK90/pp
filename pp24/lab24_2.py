@@ -17,7 +17,7 @@ class Animal:
 
     def introduce(self):
         print(
-            f"Jestem typem {self.type}, mam na imię {self.name}, jest nas {self.counter}, a wszystkich zwierząt {self.all_counter}, {self.make_sound()} !")
+            f"Jestem typem {self.type}, mam na imię {self.name}, jest nas {self.__class__.counter}, a wszystkich zwierząt {self.all_counter}, {self.make_sound()} !")
 
 
 class Dog(Animal):
