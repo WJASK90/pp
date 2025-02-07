@@ -4,7 +4,7 @@
 # • dodaj właściwość pozwalającą zliczać wszystkie zwierzęta,
 # • uwzględnij sumę wszystkich zwierząt oraz wydawane przez zwierzę dźwięki w metodzie introduce().
 
-from pp24.demo24 import Cat #!
+
 
 
 class Animal:

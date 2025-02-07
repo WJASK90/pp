@@ -28,7 +28,7 @@ class ZwyklaOsoba(Osoba):
         super().__init__(imie)
 
     def __str__(self):
-        return f"Imię: {self.imie}, Zwykła osoba (brak wynagrodzenia)"
+        return f"Imię: {self.imie}, Zwykła osoba (brak informacji o wynagrodzeniu)"
 
 
 class Menedzer(Pracownik):
@@ -42,10 +42,10 @@ class Menedzer(Pracownik):
 
 # Różne typy osób
 osoby = [
-    Menedzer("Radosław Miłosz", 10000, "Projekt A"),
+    Menedzer("Radosław Miłosz", 12500, "Projekt A"),
     ZwyklaOsoba("Helena Pakulska"),
-    Pracownik("Igor Wawrzyk", 5000),
-    Menedzer("Kornelia Łodzik", 12000, "Projekt B"),
+    Pracownik("Igor Wawrzyk", 5325),
+    Menedzer("Kornelia Łodzik", 12500, "Projekt B"),
     ZwyklaOsoba("Sebastian Bąk"),
 ]
 
