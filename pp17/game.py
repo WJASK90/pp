@@ -1,10 +1,10 @@
 import sys
 
-sys.path.append("\\\\fs1\\FolderRedir-Student\\wjaskot\\Desktop\\packages")
+sys.path.append("\\\\DESKTOP-4QM08OI\\Users\\Wojtek-PC\\Desktop\\packages")
 
 from games.lotto import get_user_numbers, check_user_numbers, draw_numbers
 
-from lotto import get_user_numbers, check_user_numbers, draw_numbers
+
 
 print("Witaj w grze LOTTO!")
 user_numbers = get_user_numbers()
