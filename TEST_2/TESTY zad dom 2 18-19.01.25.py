@@ -3,18 +3,47 @@
 # •pobierz od użytkownika szukane słowo,
 # •wyświetl liczbę wystąpień zliczanego słowa.
 
-import sys
+# file_path = C:\Users\Wojtek-PC\Desktop\Czarny Kot Edgar Allan Poe
+#
+# print(input("Wpisz słowo - sprawdzimy, ile razy występuje w pliku tekstowym: "))
+#
+# def count_words(word):
+#     words_list = []
+#     for i in word:
+#         words_list.append(i)
 
-sys.path.append("\\\\DESKTOP-4QM08OI\\Users\\Wojtek-PC\\Desktop\\Znachor_python)
+class WordCounter:
+    def __init__(self, file_path):
+        self.file_path = file_path
+        self.text = self.read_file()
 
-print(input("Wpisz słowo - sprawdzimy, ile razy występuje w pliku tekstowym: "))
+    def read_file(self):
+        """Wczytuje tekst z pliku"""
+        try:
+            with open(self.file_path, 'r', encoding='utf-8') as file:
+                text = file.read()
+            return text
+        except FileNotFoundError:
+            print(f"Błąd: Plik {self.file_path} nie został znaleziony.")
+            sys.exit()
 
-def count_words(word):
-    words_list = []
-    for i in word:
-        words_list.append(i)
+    def count_word_occurrences(self, word):
+        """Zlicza, ile razy dane słowo występuje w tekście"""
+        words = self.text.lower().split()  # dzieli tekst na słowa i ignoruje wielkość liter
+        return words.count(word.lower())  # zlicza wystąpienia słowa
 
+# Wczytanie pliku
+file_path = r"\\DESKTOP-4QM08OI\\Users\\Wojtek-PC\\Desktop\\Czarny Kot Edgar Allan Poe\\Czarny Kot opowiadanie E A Poe.txt"  # Ścieżka do pliku
+counter = WordCounter(file_path)
 
+# Pobieranie słowa od użytkownika
+user_word = input("Wpisz słowo, które chcesz znaleźć w pliku: ")
+
+# Liczenie wystąpień
+occurrences = counter.count_word_occurrences(user_word)
+
+# Wyświetlanie wyniku
+print(f"To słowo występuje w tekście {occurrences} razy!")
 
 
 
