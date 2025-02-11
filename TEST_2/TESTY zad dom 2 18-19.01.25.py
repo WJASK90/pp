@@ -3,6 +3,23 @@
 # •pobierz od użytkownika szukane słowo,
 # •wyświetl liczbę wystąpień zliczanego słowa.
 
+import sys
+
+sys.path.append("\\\\DESKTOP-4QM08OI\\Users\\Wojtek-PC\\Desktop\\Znachor_python)
+
+print(input("Wpisz słowo - sprawdzimy, ile razy występuje w pliku tekstowym: "))
+
+def count_words(word):
+    words_list = []
+    for i in word:
+        words_list.append(i)
+
+
+
+
+
+
+
 
 # 2. Zaimplementuj funkcję, która przyjmuje jako argument ciąg znaków i zwraca
 # liczbę wystąpień każdego znaku w ciągu.
