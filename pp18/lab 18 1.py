@@ -2,7 +2,7 @@
 # wraz z punktami kodowymi dla każdej litery.
 
 # Polski alfabet (małe litery z diakrytycznymi znakami)
-polski_alfabet = ["aąbcćdeęfghijklłmnoópqrsśtuvwxyzźżz"]
+polski_alfabet = "aąbcćdeęfghijklłmnoópqrsśtuvwxyzźżz"
 
 for litera in polski_alfabet:
     print(litera, ord(litera))
