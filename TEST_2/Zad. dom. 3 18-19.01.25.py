@@ -5,17 +5,17 @@
 
 
 from random import sample
-
+#tworzenie klasy
 class LottoGame:
     def __init__(self):
         self.user_numbers = []
         self.lucky_numbers = []
-
+#losowanie
     def draw_numbers(self):
         if not self.lucky_numbers:
             self.lucky_numbers = sorted(sample(range(1, 50), 6))
         return self.lucky_numbers
-
+#wprowadzanie danych do gry
     def get_game_system(self):
         while True:
             try:
@@ -27,7 +27,7 @@ class LottoGame:
             except ValueError:
                 print("Niestety, to nie jest liczba! :(")
                 continue
-
+#pobieramy liczby (z zabezpieczeniami)
     def get_user_numbers(self):
         n = self.get_game_system()
 
@@ -51,11 +51,11 @@ class LottoGame:
 
             self.user_numbers = sorted(numbers)
             return self.user_numbers
-
+#sprawdzamy trafienia
     def check_user_numbers(self):
         hits = [num for num in self.user_numbers if num in self.lucky_numbers]
         return len(hits), hits
-
+#gra w lotto
     def play(self):
         print("Witaj w grze Lotto! Oby fart ci sprzyjał!")
         self.get_user_numbers()
