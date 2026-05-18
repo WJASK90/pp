@@ -2,10 +2,8 @@ import random
 
 # Wprowadzenie do programu
 print("Brydżowa ręka")
-print()
 print("Program losuje przykładową rękę")
 print("13 kart dla jednego gracza brydża.")
-print()
 print("Wyświetlane są:")
 print("- karty pogrupowane według kolorów")
 print("- liczba punktów Miltona-Worka")

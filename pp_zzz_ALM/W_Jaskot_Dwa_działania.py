@@ -1,10 +1,10 @@
-print("Projekt: Dwa działania")
+print("Dwa działania")
 print("Program oblicza wartość wyrażenia złożonego z dwóch działań.")
 print("Możesz używać cyfr oraz: +  -  *  /")
 print("Przykład:  3 + 4 * 7")
 print("WAŻNE! Wyrażenie nie może zawierać nawiasów.\n")
 
-# --- Wczytywanie poprawnego wyrażenia ---
+# Wczytywanie poprawnego wyrażenia
 while True:
     tekst = input("Twoje wyrażenie arytmetyczne: ").strip()
     czesci = tekst.split()
@@ -42,7 +42,7 @@ while True:
 print(f"\nWczytano poprawne wyrażenie: {a} {op1} {b} {op2} {c}")
 print("Obliczam zgodnie z kolejnością działań...\n")
 
-# --- Obliczenia bez funkcji ---
+# Obliczenia
 # Najpierw * i /
 if op1 in ["*", "/"]:
     if op1 == "*":
