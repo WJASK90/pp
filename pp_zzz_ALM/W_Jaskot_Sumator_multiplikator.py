@@ -8,7 +8,7 @@ print("  2 * 3 * 4 * 0.33\n")
 while True:
     tekst = input("Podaj wyrażenie arytmetyczne: ").strip()
 
-    # Usuwamy spacje
+    # Usuwam spacje
     czesci = tekst.split()
 
     # 3 elementy: liczba operator liczba?
