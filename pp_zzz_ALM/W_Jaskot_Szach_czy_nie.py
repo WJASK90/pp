@@ -56,7 +56,7 @@ while True:
             w1 = nowa
             print(f"Wieża 1 ustawiona na {w1}")
         else:
-            print("BŁĄD: niepoprawne pole!")
+            print("UWAGA! Niepoprawne pole!")
         continue
 
     # Zmiana pozycji: wieża 2
@@ -66,7 +66,7 @@ while True:
             w2 = nowa
             print(f"Wieża 2 ustawiona na {w2}")
         else:
-            print("BŁĄD: niepoprawne pole!")
+            print("UWAGA! niepoprawne pole!")
         continue
 
     # Zmiana pozycji: hetman
@@ -76,14 +76,14 @@ while True:
             h = nowa
             print(f"Hetman ustawiony na {h}")
         else:
-            print("BŁĄD: niepoprawne pole!")
+            print("UWAGA! Niepoprawne pole!")
         continue
 
     # Sprawdzanie szacha CZY nie
     if wybor == "?":
         pole = input("Podaj pole do sprawdzenia: ").strip().lower()
         if not poprawne_pole(pole):
-            print("BŁĄD: niepoprawne pole!")
+            print("UWAGA! Niepoprawne pole!")
             continue
 
         szach = (
