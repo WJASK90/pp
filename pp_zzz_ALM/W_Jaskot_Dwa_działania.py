@@ -89,4 +89,4 @@ if isinstance(wynik, float) and wynik.is_integer():
     wynik = int(wynik)
 
 print(f"Wynik działania: {wynik}")
-print("\n=== KONIEC PROGRAMU ===")
+print("\nProgram zakończony")
